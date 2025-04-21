@@ -14,7 +14,38 @@
                        FontSize="Large"
                        HorizontalTextAlignment="Center"
                        Text="Color Maker"/>
-                
+                <Label Text="Red Color:"/>
+                <Slider x:Name="sldRed"
+                        ThumbColor="{StaticResource Primary}"
+                        MaximumTrackColor="{StaticResource Tertiary}"
+                        MinimumTrackColor="{StaticResource Secondary }"/>
+                <Label Text="Green Color:"/>
+                <Slider x:Name="slGreen"
+                        ThumbColor="{StaticResource Primary}"
+                        MaximumTrackColor="{StaticResource Tertiary}"
+                        MinimumTrackColor="{StaticResource Secondary }"/>
+                                <Label Text="Red Blue:"/>
+                                <Slider x:Name="sldBlue"
+                        ThumbColor="{StaticResource Primary}"
+                        MaximumTrackColor="{StaticResource Tertiary}"
+                        MinimumTrackColor="{StaticResource Secondary }"/>
+
+                <Frame>
+                    <HorizontalStackLayout>
+                        <Label 
+                            x:Name="lblHex"
+                            HorizontalTextAlignment="End"
+                            Text="Hex Value: #000000"
+                            VerticalOptions="Center"
+                            />
+                        <ImageButton
+                            Margin="10,0,0,0"
+                            HeightRequest="25"
+                            Source="copy.svg"
+                            />
+
+                    </HorizontalStackLayout>
+                </Frame>
             </VerticalStackLayout>
         </Frame>
 
