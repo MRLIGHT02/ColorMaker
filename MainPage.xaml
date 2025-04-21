@@ -18,17 +18,20 @@
                 <Slider x:Name="sldRed"
                         ThumbColor="{StaticResource Primary}"
                         MaximumTrackColor="{StaticResource Tertiary}"
-                        MinimumTrackColor="{StaticResource Secondary }"/>
+                        MinimumTrackColor="{StaticResource Secondary }"
+                        ValueChanged="sld_ValueChanged"/>
                 <Label Text="Green Color:"/>
                 <Slider x:Name="slGreen"
                         ThumbColor="{StaticResource Primary}"
                         MaximumTrackColor="{StaticResource Tertiary}"
-                        MinimumTrackColor="{StaticResource Secondary }"/>
-                                <Label Text="Red Blue:"/>
-                                <Slider x:Name="sldBlue"
+                        MinimumTrackColor="{StaticResource Secondary }"
+                        ValueChanged="sld_ValueChanged"/>
+                <Label Text="Red Blue:"/>
+                <Slider x:Name="sldBlue"
                         ThumbColor="{StaticResource Primary}"
                         MaximumTrackColor="{StaticResource Tertiary}"
-                        MinimumTrackColor="{StaticResource Secondary }"/>
+                        MinimumTrackColor="{StaticResource Secondary }"
+                        ValueChanged="sld_ValueChanged"/>
 
                 <Frame>
                     <HorizontalStackLayout>
@@ -41,11 +44,17 @@
                         <ImageButton
                             Margin="10,0,0,0"
                             HeightRequest="25"
-                            Source="copy.svg"
+                            Source="copy.png"
+                            VerticalOptions="Center"
+                            WidthRequest="25"
                             />
 
                     </HorizontalStackLayout>
+                    
                 </Frame>
+                <Button x:Name="btnRandom"
+                        BackgroundColor="{StaticResource Primary}"
+                        Text="Generate Random Color"/> 
             </VerticalStackLayout>
         </Frame>
 
