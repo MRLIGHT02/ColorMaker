@@ -47,6 +47,7 @@
                             Source="copy.png"
                             VerticalOptions="Center"
                             WidthRequest="25"
+                            Clicked="ImageButton_Clicked"
                             />
 
                     </HorizontalStackLayout>
